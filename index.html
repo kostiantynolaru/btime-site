@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bTime — Support</title>
+<style>
+  :root { --text:#15172b; --muted:#6b6f85; --accent:#2b34d8; --bg:#f7f8fc; --panel:#fff; }
+  body { margin:0; background:var(--bg); color:var(--text); font:17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", Inter, system-ui, sans-serif; }
+  main { max-width:680px; margin:0 auto; padding:40px 20px 80px; }
+  h1 { font-size:34px; line-height:1.15; margin:0 0 6px; letter-spacing:-0.02em; }
+  h2 { font-size:21px; margin:36px 0 10px; letter-spacing:-0.01em; }
+  .sub { color:var(--muted); margin:0 0 28px; }
+  .box { background:var(--panel); border-radius:18px; padding:18px 20px; margin:22px 0; box-shadow:0 4px 18px rgba(0,0,0,.05); }
+  details { background:var(--panel); border-radius:14px; padding:12px 18px; margin:10px 0; }
+  summary { font-weight:600; cursor:pointer; }
+  a { color:var(--accent); }
+  .lang { display:flex; gap:14px; font-size:15px; margin-bottom:24px; }
+  .lang a { text-decoration:none; padding:6px 12px; border-radius:999px; background:#e8eafb; }
+  .lang a.on { background:var(--accent); color:#fff; }
+  [lang="ro"] { display:none; }
+  html[data-lang="ro"] [lang="ro"] { display:block; }
+  html[data-lang="ro"] [lang="en"] { display:none; }
+  footer { color:var(--muted); font-size:14px; margin-top:48px; }
+</style>
+</head>
+<body>
+<main>
+  <nav class="lang" aria-label="Language">
+    <a href="#" id="en" class="on" onclick="document.documentElement.dataset.lang='en';en.classList.add('on');ro.classList.remove('on');return false">English</a>
+    <a href="#" id="ro" onclick="document.documentElement.dataset.lang='ro';ro.classList.add('on');en.classList.remove('on');return false">Română</a>
+  </nav>
+
+  <section lang="en">
+    <h1>bTime</h1>
+    <p class="sub">Work hours, kept on your phone.</p>
+    <div class="box">bTime records the hours you work, where, and for whom — and turns a month into a PDF or spreadsheet you hand to whoever pays you. No account, no server: everything stays on your iPhone.</div>
+
+    <h2>Help</h2>
+    <details><summary>A day was left running overnight</summary><p>Press <em>Stop</em>. Because the day began on an earlier date, bTime asks when you actually finished and logs only up to that time — the hours since are dropped.</p></details>
+    <details><summary>The address is wrong or missing</summary><p>Tap the place on the running day's card and type it, or tap the location arrow to look it up. The place can also be changed later from the day's entry.</p></details>
+    <details><summary>Two places, or two companies, in one day</summary><p>Tap <em>Change place</em>: the hours so far are saved at the first place, the day continues at the new one, and the lunch break is counted once. The second part can belong to the other company.</p></details>
+    <details><summary>How overtime is counted</summary><p>Above the contract day (8 h) or 40 h a week is overtime, following the Belgian rules; Sundays and public holidays count at +100 %. Each day can be corrected by hand from its entry, and the pay estimate explains every line.</p></details>
+    <details><summary>Sending the hours</summary><p>Tap the paper-plane icon, or the “Ready to send” card that appears when a pay period ends. Amounts are left out of the document unless you switch <em>Include amounts</em> on.</p></details>
+    <details><summary>Backup</summary><p><em>Settings → Your data</em>: a copy is saved automatically on the phone each day you use the app, and you can save one as a file or restore from one at any time.</p></details>
+
+    <h2>Contact</h2>
+    <p>Questions, problems or ideas: <a href="mailto:kostiantynolaru@gmail.com">kostiantynolaru@gmail.com</a>. Replies in English or Romanian.</p>
+
+    <p><a href="privacy.html">Privacy policy</a></p>
+  </section>
+
+  <section lang="ro">
+    <h1>bTime</h1>
+    <p class="sub">Orele de lucru, pe telefonul tău.</p>
+    <div class="box">bTime înregistrează orele lucrate, unde și pentru cine — și transformă luna într-un PDF sau tabel pe care îl dai celui care te plătește. Fără cont, fără server: totul rămâne pe iPhone-ul tău.</div>
+
+    <h2>Ajutor</h2>
+    <details><summary>O zi a rămas pornită peste noapte</summary><p>Apasă <em>Stop</em>. Pentru că ziua a pornit într-o dată anterioară, bTime te întreabă la ce oră ai terminat de fapt și înregistrează doar până atunci — restul orelor se pierd.</p></details>
+    <details><summary>Adresa lipsește sau e greșită</summary><p>Atinge locul de pe cardul zilei și scrie-l, sau atinge săgeata de locație ca să-l caute. Locul se poate schimba și mai târziu, din ziua respectivă.</p></details>
+    <details><summary>Două locuri sau două firme într-o zi</summary><p>Atinge <em>Schimbă locul</em>: orele de până atunci se salvează la primul loc, ziua continuă la cel nou, iar pauza de masă se scade o singură dată. A doua parte poate fi pentru cealaltă firmă.</p></details>
+    <details><summary>Cum se numără orele suplimentare</summary><p>Peste ziua din contract (8 h) sau peste 40 h pe săptămână sunt ore suplimentare, după regulile belgiene; duminicile și sărbătorile legale se numără la +100 %. Fiecare zi se poate corecta de mână din înregistrarea ei, iar estimarea de plată explică fiecare rând.</p></details>
+    <details><summary>Trimiterea orelor</summary><p>Atinge avionul de hârtie sau cardul „Gata de trimis” care apare când se încheie o perioadă de plată. Sumele nu apar în document decât dacă pornești <em>Include sumele</em>.</p></details>
+    <details><summary>Copie de siguranță</summary><p><em>Setări → Datele tale</em>: o copie se salvează automat pe telefon în fiecare zi în care folosești aplicația, și poți oricând salva una ca fișier sau restaura dintr-una.</p></details>
+
+    <h2>Contact</h2>
+    <p>Întrebări, probleme sau idei: <a href="mailto:kostiantynolaru@gmail.com">kostiantynolaru@gmail.com</a>. Răspund în română sau engleză.</p>
+
+    <p><a href="privacy.html">Politica de confidențialitate</a></p>
+  </section>
+
+  <footer>bTime</footer>
+</main>
+</body>
+</html>
