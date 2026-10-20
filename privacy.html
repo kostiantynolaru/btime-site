@@ -46,6 +46,7 @@
     <h2>Permissions, and why each is asked</h2>
     <ul>
       <li><strong>Location (while using the app)</strong> — optional. Asked only when you tap the location button or choose “find the site when I arrive”, to fill in the address of the place you are working. The position is turned into an address on the phone (using Apple's location services, under Apple's privacy terms) and kept in that day's entry. Never used in the background, never sent to the developer.</li>
+      <li><strong>Road distance (Travel)</strong> — optional, off unless you switch <em>Travel</em> on for a company in Settings. Then the distance by road between your start point and the places you worked is asked of Apple Maps once per pair of places and kept on the phone; an address you typed is looked up the same way. Apple's privacy terms apply to that lookup; nothing is sent to the developer, and you can set the kilometres by hand instead.</li>
       <li><strong>Notifications</strong> — optional. Local reminders only: in the evening if a day is still running, in the morning if a day has no place, and after a pay period ends. No push server exists.</li>
       <li><strong>Face ID</strong> — optional. If you turn it on, it is asked before amounts are shown. Face ID is handled by iOS; the app never sees your face data.</li>
       <li><strong>Camera</strong> — optional, only if you turn on the <em>camera guard</em>: while amounts are on screen, the front camera looks for a second face and blurs the amounts. Images are processed on the phone and discarded instantly; nothing is recorded or sent.</li>
@@ -57,7 +58,7 @@
       <li>No account, sign-in or password.</li>
       <li>No analytics, crash reporting or usage tracking of any kind.</li>
       <li>No advertising, no advertising identifiers.</li>
-      <li>No third-party SDKs. The only services used are Apple's own (location, Face ID, notifications), on the phone.</li>
+      <li>No third-party SDKs. The only services used are Apple's own (location, Maps for road distance, Face ID, notifications), on the phone.</li>
     </ul>
     <p>bTime works with the phone in flight mode.</p>
 
@@ -89,6 +90,7 @@
     <h2>Permisiuni și de ce e cerută fiecare</h2>
     <ul>
       <li><strong>Locație (cât aplicația e deschisă)</strong> — opțional. Cerută doar când apeși butonul de locație sau alegi „găsește șantierul când ajung”, ca să completeze adresa locului unde lucrezi. Poziția e transformată în adresă pe telefon (prin serviciile de localizare Apple, în condițiile de confidențialitate Apple) și păstrată în ziua respectivă. Niciodată în fundal, niciodată trimisă dezvoltatorului.</li>
+      <li><strong>Distanța pe șosea (Deplasări)</strong> — opțional, oprită până pornești <em>Deplasări</em> pentru o firmă în Setări. Atunci distanța pe șosea dintre punctul de plecare și locurile unde ai lucrat e cerută de la Apple Maps o singură dată pentru fiecare pereche de locuri și păstrată pe telefon; o adresă scrisă de mână e căutată la fel. Pentru căutare se aplică condițiile de confidențialitate Apple; nimic nu ajunge la dezvoltator, iar kilometrii pot fi puși și de mână.</li>
       <li><strong>Notificări</strong> — opțional. Doar mementouri locale: seara dacă o zi încă rulează, dimineața dacă o zi nu are loc, și după ce se încheie o perioadă de plată. Nu există server de push.</li>
       <li><strong>Face ID</strong> — opțional. Dacă îl pornești, e cerut înainte să se arate sumele. Face ID e gestionat de iOS; aplicația nu vede niciodată datele feței tale.</li>
       <li><strong>Cameră</strong> — opțional, doar dacă pornești <em>garda cu camera</em>: cât sumele sunt pe ecran, camera frontală caută o a doua față și ascunde sumele. Imaginile sunt procesate pe telefon și aruncate pe loc; nimic nu se înregistrează sau trimite.</li>
@@ -100,7 +102,7 @@
       <li>Niciun cont, autentificare sau parolă.</li>
       <li>Nicio statistică, raportare de erori sau urmărire a utilizării.</li>
       <li>Nicio reclamă, niciun identificator publicitar.</li>
-      <li>Niciun SDK terț. Singurele servicii folosite sunt ale Apple (locație, Face ID, notificări), pe telefon.</li>
+      <li>Niciun SDK terț. Singurele servicii folosite sunt ale Apple (locație, Hărți pentru distanța pe șosea, Face ID, notificări), pe telefon.</li>
     </ul>
     <p>bTime funcționează cu telefonul în modul avion.</p>
 
